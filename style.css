@@ -297,7 +297,7 @@
     /*** Activités ***/
     .activités {
         margin: 15px;
-        padding: 15px;
+        padding: 30px;
     }
 
     .activités-cards {
@@ -324,7 +324,25 @@
         margin: 15px;
         font-size: 16px;
     }
-    
+
+    /*** footer ***/
+    footer {
+        width: 1300px;
+        height: 163px;
+        display: flex;
+        background-color: #F2F2F2;
+        padding: 20px;
+    }
+
+    footer div {
+        width: 446.67px;
+        
+    }
+     footer li {
+        list-style-type: none;
+        margin: 15px;
+     }
+
     
     
     
