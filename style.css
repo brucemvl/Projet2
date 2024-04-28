@@ -294,6 +294,36 @@
         margin-bottom: 5px;
     }
     
+    /*** Activités ***/
+    .activités {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .activités-cards {
+        display: flex;
+        padding-top: 30px;
+        justify-content: space-between;
+    }
+
+    .activités-cards .card {
+        border-radius: 20px;
+        box-shadow: 0px 3px 15px #0000001A;
+        width: 297px;
+        height: 439px;
+        padding: 0;
+    }
+
+    .activités-cards img {
+        width: 297px;
+        height: 380px;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    .activités-cards h3 {
+        margin: 15px;
+        font-size: 16px;
+    }
     
     
     
