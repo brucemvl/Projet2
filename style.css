@@ -27,28 +27,31 @@
 
     /**** header ****/
     header {
-        display: flex;
+        display: grid;
+        grid-template-columns: 61px 244px;
+        gap: 1000px;
         margin-bottom: 50px;
         height: 79px;
     }
 
     .logo {
         height: 20px;
-        margin-top: 20px;
+        padding: 30px 50px 30px 0px;
     }
 
     header ul {
         list-style-type: none;
-        display: flex;
+        padding: 0px 50px 0px 50px;
+        display: grid;
+        grid-template-columns: 113px 63px;
+        gap: 68px;
         position: relative;
-        left: 1050px;
         bottom: 24px;
     }
 
     header li {
-margin-top: 0px;
-margin-right: 50px;     
-  padding-top: 15px;
+        margin-top: 0px;
+        padding-top: 15px;
     }
 
     header li:hover {
@@ -210,21 +213,26 @@ margin-right: 50px;
     
     /****** Hebergements ***********/
     .hebergements {
-        width: 65%;
+        width: 66%;
+        padding: 0px 30px;
+    }
+
+    .hebergements h2 {
+        margin-bottom: 30px;
     }
 
     .hebergements-cards {
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 250px 250px 250px;
+        grid-template-rows: 207px 207px;      
         flex-wrap: wrap;
+        gap: 30px;
         margin-bottom: 30px;
-        
     }
 
     .hebergements-cards .card {
-        width: 250px;
-        height: 207px;
-        margin-top: 33px;
+       width: 250px;
+       height: 207px;
     }
 
     .hebergements-cards img {
@@ -350,6 +358,10 @@ margin-right: 50px;
     /****** Media queries ***********/
     /* Medium devices (tablets, less/equal than 1024px) */
     @media (max-width: 1024px) {
+        header {
+            gap: 550px;
+        }
+
         .hebergements-and-populaires {
             flex-direction: column;
         }
@@ -380,9 +392,45 @@ margin-right: 50px;
         .populaires-cards .card-subtitle {
             font-size: 13px;
         }
+
+        .activités-cards .card {
+            width: 193px;
+            height: 270px;
+        }
+
+        .activités-cards img {
+            width: 193px;
+            height: 200px;
+        }
+
+        footer {
+            width: 924px;
+        }
     }
     
     /* Small devices (phones, less than 768px) */
     @media (max-width: 767.98px) {
-        /* ... */
+        .main-container {
+            max-width: 768px;
+        }
+
+        header {
+            display: block; 
+            text-align: center;
+        }
+
+        .filtres {
+            flex-wrap: wrap;
+        }
+
+        .hebergements-and-populaires {
+            flex-direction: column;
+        }
+
+        .hebergements-cards {
+            display: block;
+            flex-direction: column;
+        }
+        
+            
     }
