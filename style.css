@@ -21,12 +21,12 @@
     .main-container {
         width: 100%;
         max-width: 1440px;
-        padding: 0 50px;
+        padding: 0px 50px ;
         box-sizing: border-box;
     }
 
     /**** header ****/
-    header{
+    header {
         display: flex;
         margin-bottom: 50px;
         height: 79px;
@@ -40,22 +40,21 @@
     header ul {
         list-style-type: none;
         display: flex;
-        margin: auto;
-        position: absolute;
-        right: 30px;
-        top: 10px;
+        position: relative;
+        left: 1050px;
+        bottom: 24px;
     }
 
     header li {
-        margin: 50px;
-        margin-top: 10px;
+margin-top: 0px;
+margin-right: 50px;     
+  padding-top: 15px;
     }
 
     header li:hover {
         color: #0065FC;
         border-top:2px solid #0065FC;
-        margin-top: 0px;
-        padding-top: 10px;
+        padding-top: 14px;
     }
 
     a {
