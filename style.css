@@ -27,15 +27,17 @@
 
     /**** header ****/
     header {
-        display: grid;
+        display: flex;
         grid-template-columns: 61px 244px;
-        gap: 1000px;
+        /* gap: 1000px; */
         margin-bottom: 50px;
         height: 79px;
+        justify-content: space-between;
     }
 
     .logo {
         height: 20px;
+        width: 61px;
         padding: 30px 50px 30px 0px;
     }
 
@@ -67,23 +69,27 @@
 
     /*** Recherche ***/
     h1 {
-         font-size: 1.3em;
+         font-size: 22px;
     }
 
     .fonctionrecherche {
-        height: 45px;
         width: 377px;
-        border:  none;
+        height: 49px;
+        border: 1px solid #F2F2F2;
         border-radius: 15px;
-        display: grid;
+        display: flex;
         grid-template-columns: 50px 195px 132px;
-        background-color: #F2F2F2;
-        margin-bottom: 20px;
+        gap: 24px;
     }
 
     .fonctionrecherche i {
-        font-size: 25px;
         color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F2F2F2;
+        width: 50px;
+        border-radius: 15px 0px 0px 15px;
     }
 
     .submit {
@@ -93,21 +99,18 @@
         font-weight: bold;
         font-size: 17px;
         border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 15px 16px;
     }
 
     .barrederecherche {
         border: none;
-        height: 41px;
-        position: relative;
         top: 1px;
         text-align: center;
-    }
-
-    form i {
-        color: black;
-        text-align: center;
-        position: relative;
-        top: 10px;
+        display: flex;
     }
 
     #loupe {
@@ -123,21 +126,27 @@
     /*** Filtres de recherche***/
     .filtres {
         display: flex;
+        align-items: center;
+        gap: 15px;
+        height: 50px;
     }
 
     .filtres ul {
         display: flex;
         font-weight: bold;
         list-style-type: none;
-        position: relative;
-        bottom: 10px;
+        gap: 10px;
+        height: 50px;
     }
 
     .filtres li {
-        margin-right: 15px;
         border: 2px solid #D9D9D9;
         border-radius: 25px;
-        padding: 12px;
+        padding: 4px 19px 4px 19px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
     }
 
     .filtres li:hover {
@@ -146,25 +155,56 @@
     }
 
     .filtres i {
-        margin-right: 10px;
     }
     
     .info {
         margin-top: 20px;
         margin-bottom: 30px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
     }
 
     .info i {
         font-size: 10px;
-        margin-right: 10px;
         border: 2px solid #D9D9D9 ;
         border-radius: 50%;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .partiehaute {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
     }
     
+    
+    /****** Hebergements And Populaires ***********/
+    .hebergements-and-populaires {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .hebergements-and-populaires section {
+        background-color: var(--main-bg-color);
+        border-radius: 20px;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .card {
+        box-shadow: 0px 3px 15px #0000001A;
+    }
+    
+    strong {
+        font-size: 18px;
+    }
+    
+    /****** Hebergements ***********/
     .section-title {
         margin: 0;
         font-size: 22px;
@@ -193,31 +233,9 @@
         color: var(--main-bg-color)
     }
     
-    /****** Hebergements And Populaires ***********/
-    .hebergements-and-populaires {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .hebergements-and-populaires section {
-        background-color: var(--main-bg-color);
-        border-radius: 20px;
-        padding: 30px;
-        box-sizing: border-box;
-    }
-
-    .card {
-        box-shadow: 0px 3px 15px #0000001A;
-    }
-    
-    strong {
-        font-size: 18px;
-    }
-    
-    /****** Hebergements ***********/
     .hebergements {
         width: 66%;
-        padding: 0px 30px;
+        padding: 30px;
     }
 
     .hebergements h2 {
@@ -225,21 +243,19 @@
     }
 
     .hebergements-cards {
-        display: grid;
-        grid-template-columns: 250px 250px 250px;
-        grid-template-rows: 207px 207px;      
-        flex-wrap: wrap;
+        display: flex;
         gap: 30px;
-        margin-bottom: 30px;
+        flex-wrap: wrap;
     }
 
     .hebergements-cards .card {
-       width: 250px;
-       height: 207px;
+        width: 250px;
+        height: 207px;
+       
     }
 
     .hebergements-cards img {
-        width: 250px;
+        width: 100%;
         height: 124px;
         border-radius: 20px 20px 0px 0px;
     }
@@ -372,7 +388,7 @@
         .hebergements {
             width: 100%;
         }
-    
+
         .populaires {
             width: 100%;
             margin-top: 50px;
@@ -445,6 +461,8 @@
         .fonctionrecherche {
             margin: 0px 20px;
             grid-template-columns: 15% 70% 15%;
+            justify-content: center;
+            display: grid;
         }
 
         form span {
@@ -452,12 +470,16 @@
         }
 
         #loupe {
-            display: block;
+            display: flex;
             color: white;
         }
 
         .submit {
             border-radius: 15px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            box-shadow:0px 4px 4px #00000040;
         }
 
 
