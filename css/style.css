@@ -582,4 +582,12 @@
             gap: 50px;
             padding: 30px;
         }
+
+        footer ul {
+            padding-inline-start:0px ;
+        }
+
+        footer div {
+            padding: 0px;
+        }
     }
