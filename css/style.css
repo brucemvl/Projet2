@@ -522,9 +522,9 @@
         }
 
         .filtres li {
-            width: 162px;
             display: flex;
-            justify-content: flex-start;       
+            justify-content: flex-start; 
+            flex: 1;      
         }
 
         .hebergements-and-populaires {
