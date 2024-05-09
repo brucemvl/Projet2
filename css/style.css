@@ -97,6 +97,10 @@
         border-radius: 15px 0px 0px 15px;
     }
 
+    #position {
+        width: 100px;
+    }
+
     .submit {
         background-color: #0065FC;
         color: white;
@@ -113,9 +117,8 @@
 
     .barrederecherche {
         border: none;
-        top: 1px;
         text-align: center;
-        display: flex;
+        width: 100%;
     }
 
     #loupe {
@@ -494,9 +497,7 @@
         }
 
         .fonctionrecherche {
-            grid-template-columns: 15% 60% 15%;
-            justify-content: center;
-            display: grid;
+            display: flex;
             width: 100%;
         }
 
@@ -516,6 +517,7 @@
             align-content: center;
             justify-content: center;
             box-shadow:0px 4px 4px #00000040;
+            width: 60px;
         }
 
          .filtres {
