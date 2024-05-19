@@ -497,7 +497,7 @@
         }
 
         #loupe {
-            display: flex;
+            display: contents;
             color: white;
             background-color: #0065fc;
         }
