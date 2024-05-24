@@ -30,7 +30,6 @@
     /**** header ****/
     header {
         display: flex;
-        grid-template-columns: 61px 244px;
         max-width: 1440px;
         height: 79px;
         justify-content: space-between;
@@ -46,8 +45,7 @@
     header ul {
         list-style-type: none;
         padding: 0px 50px 0px 50px;
-        display: grid;
-        grid-template-columns: 113px 63px;
+        display: flex;
         gap: 68px;
         position: relative;
         bottom: 24px;
